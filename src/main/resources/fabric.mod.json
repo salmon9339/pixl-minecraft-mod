@@ -3,13 +3,13 @@
 	"id": "pixl-minecraft-mod",
 	"version": "${version}",
 	"name": "Pixl Minecraft Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod was made for the trial by the NPC Luica in Pixl.",
 	"authors": [
 		"Me!"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": "https://github.com/salmon9339/pixl-minecraft-mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/pixl-minecraft-mod/icon.png",
