@@ -1,6 +1,7 @@
 package logan.pixl.item;
 
 import logan.pixl.PixlMinecraftMod;
+import logan.pixl.item.custom.ChiselItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -16,8 +17,9 @@ public class ModItems {
 
     public static final Item FLUORITE = registerItem("fluorite", Item::new);
     public static final Item RAW_FLUORITE = registerItem("raw_fluorite", Item::new);
+    public static final Item STONE_POLE = registerItem("stone_pole", Item::new);
 
-
+    public static final Item CHISEL = registerItem("chisel", properties -> new ChiselItem(properties.durability(32)));
 
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();

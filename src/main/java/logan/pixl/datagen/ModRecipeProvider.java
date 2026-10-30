@@ -9,6 +9,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
@@ -45,6 +46,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 shapeless(RecipeCategory.MISC, ModItems.RAW_FLUORITE, 9)
                         .requires(ModBlocks.RAW_FLUORITE_BlOCK)
                         .unlockedBy(getHasName(ModBlocks.RAW_FLUORITE_BlOCK), has(ModBlocks.RAW_FLUORITE_BlOCK))
+                        .group("fluorite")
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.STONE_POLE)
+                        .pattern("S")
+                        .pattern("S")
+                        .define('S', Items.STONE)
+                        .unlockedBy(getHasName(Items.STONE), has(Items.STONE))
+                        .group("stone")
+                        .save(output);
+                shaped(RecipeCategory.MISC, ModItems.CHISEL)
+                        .pattern("  F")
+                        .pattern(" S ")
+                        .pattern("S  ")
+                        .define('S', ModItems.STONE_POLE)
+                        .define('F', ModItems.FLUORITE)
+                        .unlockedBy(getHasName(ModItems.FLUORITE), has(ModItems.FLUORITE))
+                        .unlockedBy(getHasName(ModItems.STONE_POLE), has(ModItems.STONE_POLE))
                         .group("fluorite")
                         .save(output);
             }

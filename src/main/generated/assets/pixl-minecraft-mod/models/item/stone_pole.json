@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pixl-minecraft-mod:item/stone_pole"
+  }
+}

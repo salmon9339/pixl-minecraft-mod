@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stone",
+  "key": {
+    "S": "minecraft:stone"
+  },
+  "pattern": [
+    "S",
+    "S"
+  ],
+  "result": {
+    "id": "pixl-minecraft-mod:stone_pole"
+  }
+}

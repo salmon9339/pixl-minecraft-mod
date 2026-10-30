@@ -1,5 +1,6 @@
 // 26.3	-999999999-01-01T00:00:00	Pixl Minecraft Mod/PixlMinecraftMod Recipes
 243922b1ddc1edc1768e465b43a103792cd19106 data/pixl-minecraft-mod/advancement/recipes/building_blocks/fluorite_block.json
+46f7d5272c3e23ee19edeee05e03452f65450d56 data/pixl-minecraft-mod/advancement/recipes/misc/chisel.json
 8ab780d3987328d8de35d65508897c41195297d1 data/pixl-minecraft-mod/advancement/recipes/misc/fluorite.json
 eff3f609782e785e5a5d74423ff5e79e9df1a6ab data/pixl-minecraft-mod/advancement/recipes/misc/fluorite_from_blasting_deepslate_fluorite_ore.json
 c770069e19d22bd3ff4397a24a19b5964cdb6600 data/pixl-minecraft-mod/advancement/recipes/misc/fluorite_from_blasting_fluorite_ore.json
@@ -9,6 +10,8 @@ a421183b535fe3c2e926a51561942423e917cd60 data/pixl-minecraft-mod/advancement/rec
 e652368d303a5169b2702075d625c17ed8ac7b19 data/pixl-minecraft-mod/advancement/recipes/misc/fluorite_from_smelting_raw_fluorite.json
 0ea479ddd8714b53a0c6dd541539043dfa26cb63 data/pixl-minecraft-mod/advancement/recipes/misc/raw_fluorite.json
 13360a85ae09524fad2992a2181e53e76c1ef387 data/pixl-minecraft-mod/advancement/recipes/misc/raw_fluorite_block.json
+ea9bed689cc302de7dc37118216c00745b9d286d data/pixl-minecraft-mod/advancement/recipes/misc/stone_pole.json
+ce62f4c4e86f3283f87a66df7531b608ba83d429 data/pixl-minecraft-mod/recipe/chisel.json
 878099f1ae636de06290e684b3f461d5361e8bab data/pixl-minecraft-mod/recipe/fluorite.json
 6007d6ec99d7244ccf4c093be9e5d5c9f04393fa data/pixl-minecraft-mod/recipe/fluorite_block.json
 9bc1c9f508469a7ce7187695d58a5ef2123abec3 data/pixl-minecraft-mod/recipe/fluorite_from_blasting_deepslate_fluorite_ore.json
@@ -19,3 +22,4 @@ e652368d303a5169b2702075d625c17ed8ac7b19 data/pixl-minecraft-mod/advancement/rec
 fade9cb54e138385b2ab8ed180632936b4c19385 data/pixl-minecraft-mod/recipe/fluorite_from_smelting_raw_fluorite.json
 f043dc2a7df96ff11c5910b3a6aaf42efef985ff data/pixl-minecraft-mod/recipe/raw_fluorite.json
 57a7ac58e59aa74cc62f0ac087aeab984265c846 data/pixl-minecraft-mod/recipe/raw_fluorite_block.json
+1025f84485954e2df6d27948f0d0c323fe0cf251 data/pixl-minecraft-mod/recipe/stone_pole.json

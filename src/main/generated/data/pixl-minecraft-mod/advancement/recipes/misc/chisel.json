@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fluorite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixl-minecraft-mod:fluorite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stone_pole": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixl-minecraft-mod:stone_pole"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "pixl-minecraft-mod:chisel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fluorite",
+      "has_stone_pole"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pixl-minecraft-mod:chisel"
+    ]
+  }
+}
