@@ -1,18 +1,21 @@
 package logan.pixl.item;
 
 import logan.pixl.PixlMinecraftMod;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 
-import java.awt.image.PixelInterleavedSampleModel;
 import java.util.function.Function;
 
 public class ModItems {
 
+    public static final Item FLUORITE = registerItem("fluorite", Item::new);
+    public static final Item RAW_FLUORITE = registerItem("raw_fluorite", Item::new);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(PixlMinecraftMod.MOD_ID, name),
@@ -22,6 +25,10 @@ public class ModItems {
     public static void registerModItems() {
         PixlMinecraftMod.LOGGER.info("Registering Mod Items for" + PixlMinecraftMod.MOD_ID);
 
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
+            output.accept(FLUORITE);
+            output.accept(RAW_FLUORITE);
+        });
     }
 
 }
