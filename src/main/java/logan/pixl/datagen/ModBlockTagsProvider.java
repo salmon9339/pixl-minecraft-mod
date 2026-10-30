@@ -19,7 +19,8 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.getRK(ModBlocks.FLUORITE_BLOCK))
                 .add(ModBlocks.getRK(ModBlocks.FLUORITE_ORE))
-                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_FLUORITE_ORE));
+                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_FLUORITE_ORE))
+                        .add(ModBlocks.getRK(ModBlocks.RAW_FLUORITE_BlOCK));
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_FLUORITE_ORE));

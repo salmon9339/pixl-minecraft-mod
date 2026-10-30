@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "pixl-minecraft-mod:block/raw_fluorite_block"
+  }
+}

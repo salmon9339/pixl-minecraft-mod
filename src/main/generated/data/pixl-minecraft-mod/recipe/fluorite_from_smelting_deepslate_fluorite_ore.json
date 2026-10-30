@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "fluorite",
+  "ingredient": "pixl-minecraft-mod:deepslate_fluorite_ore",
+  "result": {
+    "id": "pixl-minecraft-mod:fluorite"
+  }
+}

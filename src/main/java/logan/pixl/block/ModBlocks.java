@@ -32,6 +32,11 @@ public class ModBlocks {
                     properties.strength(3F)
                             .requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final Block RAW_FLUORITE_BlOCK = registerBlock("raw_fluorite_block",
+            properties -> new Block(properties.strength(4F)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();
     }

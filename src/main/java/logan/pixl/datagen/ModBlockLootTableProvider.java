@@ -29,6 +29,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
     public void generate() {
 
         dropSelf(ModBlocks.FLUORITE_BLOCK);
+        dropSelf(ModBlocks.RAW_FLUORITE_BlOCK);
 
         add(ModBlocks.FLUORITE_ORE, createOreDrop(ModBlocks.FLUORITE_ORE, ModItems.RAW_FLUORITE));
         add(ModBlocks.DEEPSLATE_FLUORITE_ORE, createMultipleOreDrops(ModBlocks.DEEPSLATE_FLUORITE_ORE, ModItems.RAW_FLUORITE, 3, 5));
