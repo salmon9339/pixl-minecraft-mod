@@ -24,11 +24,6 @@ public class ModItems {
 
     public static void registerModItems() {
         PixlMinecraftMod.LOGGER.info("Registering Mod Items for" + PixlMinecraftMod.MOD_ID);
-
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
-            output.accept(FLUORITE);
-            output.accept(RAW_FLUORITE);
-        });
     }
 
 }

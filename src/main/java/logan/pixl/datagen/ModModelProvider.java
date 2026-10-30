@@ -1,6 +1,7 @@
 package logan.pixl.datagen;
 
 
+import logan.pixl.block.ModBlocks;
 import logan.pixl.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -15,7 +16,9 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
-
+        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_FLUORITE_ORE);
     }
 
     @Override

@@ -1,5 +1,7 @@
 package logan.pixl;
 
+import logan.pixl.block.ModBlocks;
+import logan.pixl.creativemodetab.ModCreativeModeTabs;
 import logan.pixl.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +16,9 @@ public class PixlMinecraftMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModCreativeModeTabs.registerModCreativeModeTabs();
+
+		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 	}
 

@@ -1,4 +1,13 @@
 {
   "item.pixl-minecraft-mod.fluorite": "Fluorite",
-  "item.pixl-minecraft-mod.raw_fluorite": "Raw Fluorite"
+  "item.pixl-minecraft-mod.raw_fluorite": "Raw Fluorite",
+
+
+  "block.pixl-minecraft-mod.fluorite_block": "Block of Fluorite",
+  "block.pixl-minecraft-mod.fluorite_ore": "Fluorite Ore",
+  "block.pixl-minecraft-mod.deepslate_fluorite_ore": "Deepslate Fluorite Ore",
+
+
+  "creativemodetab.pixl-minecraft-mod.fluorite_items": "Fluorite",
+  "creativemodetab.pixl-minecraft-mod.fluorite_blocks": "Fluorite Blocks"
 }
