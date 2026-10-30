@@ -17,6 +17,12 @@ public class ModItems {
     public static final Item FLUORITE = registerItem("fluorite", Item::new);
     public static final Item RAW_FLUORITE = registerItem("raw_fluorite", Item::new);
 
+
+
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
+
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(PixlMinecraftMod.MOD_ID, name),
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(PixlMinecraftMod.MOD_ID, name)))));
