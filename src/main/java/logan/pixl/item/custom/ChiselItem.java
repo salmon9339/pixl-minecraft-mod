@@ -2,9 +2,7 @@ package logan.pixl.item.custom;
 
 import logan.pixl.block.ModBlocks;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -29,8 +27,7 @@ public class ChiselItem extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext context) {
-        // Right Click bLOCK
-        // Change Block from A to B
+        // wouldn't it be funny if i just started writing fanfiction in here
 
         Level level = context.getLevel();
         Block clickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
