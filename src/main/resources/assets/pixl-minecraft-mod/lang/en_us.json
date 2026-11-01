@@ -15,5 +15,9 @@
 
 
   "creativemodetab.pixl-minecraft-mod.fluorite_items": "Fluorite",
-  "creativemodetab.pixl-minecraft-mod.fluorite_blocks": "Fluorite Blocks"
+  "creativemodetab.pixl-minecraft-mod.fluorite_blocks": "Fluorite Blocks",
+  "tooltip.pixl-minecraft-mod.chisel": "Press §eShift§r for more Information!",
+  "tooltip.pixl-minecraft-mod.chisel.shift_down": "Chisels Blocks into other Blocks",
+  "tooltip.pixl-minecraft-mod.fluorite-food": "§4Why would you eat this?§r",
+  "tooltip.pixl-minecraft-mod.magic_block": "This block give off... §9MAGICAL §r vibes"
 }
