@@ -3,12 +3,15 @@
   "item.pixl-minecraft-mod.raw_fluorite": "Raw Fluorite",
   "item.pixl-minecraft-mod.chisel": "Chisel",
   "item.pixl-minecraft-mod.stone_pole": "Stone Pole",
+  "item.pixl-minecraft-mod.fluorite_bowl": "Bowl of Fluorite",
+  "item.pixl-minecraft-mod.fluorite_fuel": "Combustible Fluorite",
 
 
   "block.pixl-minecraft-mod.fluorite_block": "Block of Fluorite",
   "block.pixl-minecraft-mod.fluorite_ore": "Fluorite Ore",
   "block.pixl-minecraft-mod.deepslate_fluorite_ore": "Deepslate Fluorite Ore",
   "block.pixl-minecraft-mod.raw_fluorite_block": "Block of Raw Fluorite",
+  "block.pixl-minecraft-mod.magic_block" : "Magic Block",
 
 
   "creativemodetab.pixl-minecraft-mod.fluorite_items": "Fluorite",

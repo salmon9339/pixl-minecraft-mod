@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "pixl-minecraft-mod:block/magic_block"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "fluorite",
+  "group": "fluorite_raw",
   "ingredients": [
     "pixl-minecraft-mod:raw_fluorite_block"
   ],

@@ -21,6 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.DEEPSLATE_FLUORITE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.RAW_FLUORITE_BlOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_BLOCK);
     }
 
     @Override
@@ -29,5 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.RAW_FLUORITE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.CHISEL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.STONE_POLE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.FLUORITE_BOWL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.COMBUSTIBLE_FLUORITE, ModelTemplates.FLAT_ITEM);
     }
 }

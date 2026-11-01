@@ -21,6 +21,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_FLUORITE);
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.STONE_POLE);
+                        output.accept(ModItems.FLUORITE_BOWL);
+                        output.accept(ModItems.COMBUSTIBLE_FLUORITE);
                     }).build());
 
     public static final CreativeModeTab FLUORITE_BLOCK_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
@@ -32,6 +34,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.FLUORITE_ORE);
                         output.accept(ModBlocks.DEEPSLATE_FLUORITE_ORE);
                         output.accept(ModBlocks.RAW_FLUORITE_BlOCK);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
                     }).build());
 
 

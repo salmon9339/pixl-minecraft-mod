@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "magic_block",
+  "key": {
+    "D": "minecraft:diamond_block",
+    "F": "pixl-minecraft-mod:fluorite_block",
+    "N": "minecraft:netherite_block",
+    "R": "minecraft:redstone_block"
+  },
+  "pattern": [
+    "FFF",
+    "FRF",
+    "DND"
+  ],
+  "result": {
+    "id": "pixl-minecraft-mod:magic_block"
+  }
+}

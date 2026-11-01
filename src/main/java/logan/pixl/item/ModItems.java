@@ -1,6 +1,7 @@
 package logan.pixl.item;
 
 import logan.pixl.PixlMinecraftMod;
+import logan.pixl.food.ModFoods;
 import logan.pixl.item.custom.ChiselItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
@@ -10,6 +11,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 import java.util.function.Function;
 
@@ -19,7 +21,14 @@ public class ModItems {
     public static final Item RAW_FLUORITE = registerItem("raw_fluorite", Item::new);
     public static final Item STONE_POLE = registerItem("stone_pole", Item::new);
 
+
     public static final Item CHISEL = registerItem("chisel", properties -> new ChiselItem(properties.durability(32)));
+    public static final Item FLUORITE_BOWL = registerItem("fluorite_bowl", properties -> new Item(properties
+            .food(ModFoods.FLUORITE_BOWL, ModFoods.FLUORITE_BOWL_CONSUMEABLE)));
+    public static final Item COMBUSTIBLE_FLUORITE = registerItem("fluorite_fuel", properties -> new Item(properties.stacksTo(16)
+            .cookingFuel(ContextIntProviders.COOKING_TIME_BLAZE_ROD)));
+
+
 
     public static ResourceKey<Item> getRK(Item item) {
         return BuiltInRegistries.ITEM.getResourceKey(item).get();

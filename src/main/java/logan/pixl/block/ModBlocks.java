@@ -1,6 +1,7 @@
 package logan.pixl.block;
 
 import logan.pixl.PixlMinecraftMod;
+import logan.pixl.block.custom.MagicBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -36,6 +37,9 @@ public class ModBlocks {
             properties -> new Block(properties.strength(4F)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+    properties -> new MagicBlock(properties.strength(2)
+            .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     public static ResourceKey<Block> getRK(Block block) {
         return BuiltInRegistries.BLOCK.getResourceKey(block).get();

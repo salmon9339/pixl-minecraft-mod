@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "fluorite",
+  "group": "fluorite_chisel",
   "key": {
     "F": "pixl-minecraft-mod:fluorite",
     "S": "pixl-minecraft-mod:stone_pole"

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fluorite_fuel",
+  "key": {
+    "C": "minecraft:coal",
+    "F": "pixl-minecraft-mod:fluorite"
+  },
+  "pattern": [
+    " F ",
+    "FCF",
+    " F "
+  ],
+  "result": {
+    "id": "pixl-minecraft-mod:fluorite_fuel"
+  }
+}

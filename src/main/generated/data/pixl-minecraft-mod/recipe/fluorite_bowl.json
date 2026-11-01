@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "fluorite_bowl",
+  "key": {
+    "B": "minecraft:bowl",
+    "F": "pixl-minecraft-mod:fluorite"
+  },
+  "pattern": [
+    "FFF",
+    " B "
+  ],
+  "result": {
+    "id": "pixl-minecraft-mod:fluorite_bowl"
+  }
+}

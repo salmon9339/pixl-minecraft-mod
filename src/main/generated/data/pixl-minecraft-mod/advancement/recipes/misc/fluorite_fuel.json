@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:coal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_fluorite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "pixl-minecraft-mod:fluorite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "pixl-minecraft-mod:fluorite_fuel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fluorite",
+      "has_coal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pixl-minecraft-mod:fluorite_fuel"
+    ]
+  }
+}
