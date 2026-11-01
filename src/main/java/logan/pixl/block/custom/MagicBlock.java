@@ -1,12 +1,8 @@
 package logan.pixl.block.custom;
 
-import logan.pixl.block.ModBlocks;
 import logan.pixl.item.ModItems;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -21,6 +17,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class MagicBlock extends Block {
@@ -41,25 +39,55 @@ public class MagicBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState onState, Entity entity) {
         // buddie season 10 :pray:
+        BlockPos posBelow = pos.below();
+        BlockState blockStateBelow = level.getBlockState(posBelow);
+        FluidState fluidStateBelow = blockStateBelow.getFluidState();
+
         if(entity instanceof Player player) {
-            player.addEffect(new MobEffectInstance(MobEffects.GLOWING, 300));
+            if (fluidStateBelow.is(Fluids.WATER)) {
+                player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 1));
+            }
+            if (fluidStateBelow.is(Fluids.LAVA)) {
+                player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 3));
+            }
+            if (blockStateBelow.is(Blocks.OBSIDIAN)) {
+                player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 5));
+            }
+            if(blockStateBelow.is(Blocks.CRYING_OBSIDIAN)) {
+                player.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 7));
+            }
         }
 
-        BlockPos posBelow = pos.below();
-        BlockState stateBelow = level.getBlockState(posBelow);
-
         if(entity instanceof ItemEntity itemEntity) {
-            if(stateBelow.is(Blocks.OBSIDIAN)) {
-                if(isValidItem(itemEntity.getItem())) {
-                    itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount() * 4));
+
+            ItemStack transItem = itemEntity.getItem();
+
+            if(blockStateBelow.is(Blocks.DIAMOND_BLOCK)) {
+                if(transItem.is(ModItems.FLUORITE)) {
+                    itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+                }
+            }
+            if(blockStateBelow.is(Blocks.REDSTONE_BLOCK)) {
+                if(itemEntity.getItem().is(ModItems.FLUORITE)) {
+                    itemEntity.setItem(new ItemStack(Items.REDSTONE, itemEntity.getItem().getCount() * 2));
+                }
+            }
+            if(blockStateBelow.is(Blocks.IRON_BLOCK)) {
+                if(transItem.is(ModItems.FLUORITE)) {
+                    itemEntity.setItem(new ItemStack(Items.IRON_INGOT, transItem.getCount() * 2));
+                }
+            }
+            if(blockStateBelow.is(Blocks.GOLD_BLOCK)) {
+                if(transItem.is(ModItems.FLUORITE)) {
+                    itemEntity.setItem(new ItemStack(Items.GOLD_INGOT, transItem.getCount() * 2));
+                }
+            }
+            if(blockStateBelow.is(Blocks.NETHERITE_BLOCK)) {
+                if(transItem.is(ModItems.FLUORITE)) {
+                    itemEntity.setItem(new ItemStack(Items.NETHERITE_SCRAP, transItem.getCount()));
                 }
             }
 
         }
     }
-
-    private boolean isValidItem(ItemStack item) {
-        return item.is(ModItems.FLUORITE) || item.is(Items.IRON_INGOT);
-    }
-
 }
